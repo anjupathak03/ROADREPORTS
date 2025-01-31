@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Road Issue Reporter</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home" onclick="showSection('home')">Home</a></li>
+                <li><a href="#report" onclick="showSection('report')">Report</a></li>
+                <li><a href="#record" onclick="showSection('record')">Record</a></li>
+                <li><a href="#issue-discussion" onclick="showSection('issue-discussion')">Issue Discussion</a></li>
+                <li><a href="#about" onclick="showSection('about')">About</a></li>
+                <li><a href="login-signup.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <h1>Welcome to Road Issue Reporter</h1>
+            <p>Report and track issues on the road to make your community safer.</p>
+            <div class="cta-buttons">
+                <button onclick="showSection('report')">Report an Issue</button>
+                <button onclick="showSection('about')">Learn More</button>
+            </div>
+            <div class="features">
+                <div class="feature">
+                    <img src="immages/roadreport1.jpg">
+                    <h3>Easy Reporting</h3>
+                    <p>Report road issues quickly with our user-friendly interface.</p>
+                </div>
+                <div class="feature">
+                    <img src="immages/roadreport2.jpg" alt="Feature Icon">
+                    <h3>Track Progress</h3>
+                    <p>Stay updated on the status of reported issues in real-time.</p>
+                </div>
+                <div class="feature">
+                    <img src="immages/10280491.jpg" alt="Feature Icon">
+                    <h3>Community Engagement</h3>
+                    <p>Join discussions and work together to solve community problems.</p>
+                </div>
+            </div>
+            <div class="testimonials">
+                <h2>What Our Users Say</h2>
+                <div class="testimonial">
+                    <p>"This platform has made it so easy to report road issues. Our community is much safer now!"</p>
+                    <span>- John Doe</span>
+                </div>
+                <div class="testimonial">
+                    <p>"Thanks to Road Issue Reporter, we have successfully resolved many local issues."</p>
+                    <span>- Jane Smith</span>
+                </div>
+            </div>
+        
+
+            <div class="home-images">
+                <div class="home1">
+                <img src="immages/roadreport1.jpg" width="450" height="200">
+                </div>
+                <div class="home2"><img src="immages/vish.jpg" width="450" height="200"></div>
+                <div class="home3"><img src="immages/an2.jpg" width="450" height="200"></div>
+               
+            </div>
+        </section>
+
+        <section id="report" style="display: none;">
+            <div class="upload">
+                <h2>Upload Pictures</h2>
+                <input type="file" id="uploadFile">
+                <button id="uploadBtn">Upload</button>
+                <button>Add Location</button>
+                <button>Add Tags</button>
+            </div>
+            <div class="report-issues">
+                <h2>Report Issues</h2>
+                <label><input type="checkbox" class="issue-checkbox"> No Light</label>
+                <label><input type="checkbox" class="issue-checkbox"> Garbage</label>
+                <label><input type="checkbox" class="issue-checkbox"> Potholes</label>
+                <label><input type="checkbox" class="issue-checkbox"> Water Logging</label>
+                <label><input type="checkbox" class="issue-checkbox"> Other</label>
+                <input type="text" placeholder="Location Pin" id="locationPin">
+                <textarea placeholder="Add Description" id="description"></textarea>
+                <select id="urgencyLevel">
+                    <option>Low</option>
+                    <option>Medium</option>
+                    <option>High</option>
+                </select>
+                <button id="submitReportBtn">Submit Report</button>
+            </div>
+        </section>
+
+        <section id="record" style="display: none;">
+            <h2>Record</h2>
+            <div id="reports"></div>
+        </section>
+
+        <section id="issue-discussion" style="display: none;">
+            <h2>Issue Discussion</h2>
+            <div class="discussion-section">
+                <h3>Discussion Topic 1</h3>
+                <p>Description of the discussion topic</p>
+                <hr>
+            </div>
+            <div class="discussion-section">
+                <h3>Discussion Topic 2</h3>
+                <p>Description of the discussion topic.</p>
+                <hr>
+            </div>
+            <div class="discussion-section">
+                <h3>Section 3</h3>
+                <p>Details about section 3...</p>
+                <hr>
+            </div>
+        </section>
+
+        <section id="about" style="display: none;">
+            <h2>About us</h2>
+            <p>This platform allows you to report and track issues on the road to help improve community safety. You can report issues, upload pictures, and discuss with other community members.
+                <br>
+                The Road Issue Reporter platform is dedicated to improving community safety by allowing users to report and track road issues. By providing detailed reports and facilitating discussions, we aim to help local authorities address problems more efficiently.
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#privacy-policy">Privacy Policy</a></li>
+                <li><a href="#terms-of-service">Terms of Service</a></li>
+                <li><a href="#facebook">Facebook</a></li>
+                <li><a href="#twitter">Twitter</a></li>
+                <li><a href="#instagram">Instagram</a></li>
+            </ul>
+        </nav>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
